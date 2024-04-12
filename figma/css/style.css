@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: url('../images/v1_23.png');
+    background-size: cover;
+    background-position: center;
+    height: 919px;
+}
+
+.content {
+    background-color: #AEAEAE; /* Light grey background */
+    padding: 20px;
+    padding-bottom: 10em;
+}
+
+.contentWrapper {
+    width: 80%;
+    margin: 0 auto; /* Center the content wrapper horizontally */
+    display: flex;
+    justify-content: space-between; /* Space between h1 and p */
+}
+
+.content h1 {
+    flex: 1; /* Takes up 1/3 of the available space */
+    margin-right: 20px; /* Spacing between h1 and p */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.content p {
+    max-width: 32em;
+}
+
+.footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    height: 520px;
+}
+
+.footer img {
+    float: right;
+    margin: -16em -6em 0 0;
+    width: 800px;
+    height: auto;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: flex-start; /* Start align when wrapping */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin-top: 20px;
+}
+
+.box {
+    min-width: 8em;
+    margin: 1em;
+    width: calc((80% / 5) - 2em); /* Adjust width as needed */
+    background-color: #1A1A1A; /* Dark background */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text color */
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.box:hover {
+    transform: scale(1.1); /* Scale up the box on hover */
+}
+
+.box h2 {
+    color: #fff; /* White title */
+    font-size: 20px; /* Adjust as needed */
+    margin-bottom: -0.5em; /* Spacing between title and subtitle */
+}
+
+.box p {
+    color: #AEAEAE; /* Gray subtitle */
+    margin-bottom: 15px; /* Spacing between subtitle and percentage */
+}
+
+.box .percentage {
+    font-weight: bold;
+    font-size: 4em; /* Adjust as needed */
+    background: linear-gradient(to right, #FFE81B, #FFB11B); /* Horizontal gradient */
+    -webkit-background-clip: text; /* Clip text to the background */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+.box .time {
+    text-transform: uppercase; /* All caps */
+    color: #fff; /* White text color */
+}
+
+.box.hvr-shrink {
+    transition: transform 0.5s ease; /* Add transition effect */
+}
+
+.box.hvr-shrink:hover {
+    transform: scale(0.9); /* Shrink the box on hover */
+}
+
+.box.hvr-rotate {
+    transition: transform 0.5s ease; /* Add transition effect */
+}
+
+.box.hvr-rotate:hover {
+    transform: rotate(360deg); /* Rotate the box on hover */
+}
+
+.box.hvr-fade {
+    transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+.box.hvr-fade:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+
+.box.flip {
+    transition: transform 0.5s ease; /* Add transition effect */
+}
+
+.box.flip:hover {
+    transform: rotateY(360deg); /* Flip the box on hover */
+}
